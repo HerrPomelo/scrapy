@@ -1,0 +1,38 @@
+Linux指令：
+（一）创建版本库
+     mkdir+文件名  目录下创建文件
+     git init初始化一个仓库
+     git add <path>添加到索引库 可以是文件可以是目录
+     git commit -m ""提交到仓库
+git status当前库状态
+git diff查看不同
+git log历史记录
+git reset --hard HEAD^
+git reset --hard+版本号
+git reflog记录命令
+
+
+
+创建版本库：
+（1）create a new repository on the command line：
+本地库推送到github仓库
+echo "# learngit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/HerrPomelo/learngit.git     
+（ git remote add origin git@github.com:HerrPomelo/learngit.git
+）
+git push -u origin master
+
+
+（2）push an existing repository from the command line：
+git remote add origin https://github.com/HerrPomelo/learngit.git
+git push -u origin master
+
+（3）import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+python下载第三方库需要先进入Scripts之后使用pip install
